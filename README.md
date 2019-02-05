@@ -8,6 +8,7 @@ Each student has been assigned to the [HPC services](http://www.imperial.ac.uk/c
 The containers provided by HPC already have all the modules you need to do your project. If you need a specific software, first check if it is available using `module avail`, and discuss it with the HPC services directly. 
 
 * If you prefer to use python 3: `module load anaconda3/4.3.1`
+* `anaconda-setup`
 * Launch Python: `python`
 
 ## Create your virtual environment
@@ -17,7 +18,7 @@ A virtual environnment is like a small container where you can install all the p
 * `source deactivate`: to deactivate your environment.
 
 Install your packages (ex: pytorch): 
-* `conda activate <name_environment>`
+* `source activate <name_environment>`
 * `conda install pytorch torchvision -c pytorch`
 * `conda install matplotlib` ...
 
@@ -25,16 +26,15 @@ Install your packages (ex: pytorch):
 You can either use git or bitbucket.
 
 For example, if you don't have (yet) any code:
-* `git clone https://github.com/a-pouplin/sandbox_msc.git`: you can clone your own repo, also from Bitbucket
-* `cd sandbox_msc`
+* `git clone https://github.com/a-pouplin/use_HPC.git`
 
 ## Submit your code to the system
 In order to submit your job, you will need to submit a [PBS file](https://en.wikipedia.org/wiki/Portable_Batch_System) using a [bashscript](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) to HPC. Your job will be in a queue (which can last either a few minutes or a few hours). You can create your bashscript using vim: `vim <pbs_name>.sh`
 
 You will need to write some specifications:
 ```
-PBS -l walltime=00:30:00
-PBS -lselect=1:ncpus=1:mem=8gb:ngpus=1
+#PBS -lwalltime=00:30:00
+#PBS -lselect=1:ncpus=1:mem=8gb:ngpus=1
 module load anaconda3/4.3.1
 source activate <name_environment>
 python $HOME/<path_to_code>/<code>.py
