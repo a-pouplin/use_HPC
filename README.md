@@ -25,8 +25,7 @@ Install your packages (ex: pytorch):
 You can either use git or bitbucket.
 
 For example, if you don't have (yet) any code:
-* `git clone https://github.com/a-pouplin/sandbox_msc.git`: you can clone your own repo, also from Bitbucket
-* `cd sandbox_msc`
+* `git clone https://github.com/a-pouplin/use_HPC.git`
 
 ## Submit your code to the system
 In order to submit your job, you will need to submit a [PBS file](https://en.wikipedia.org/wiki/Portable_Batch_System) using a [bashscript](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) to HPC. Your job will be in a queue (which can last either a few minutes or a few hours). You can create your bashscript using vim: `vim <pbs_name>.sh`
