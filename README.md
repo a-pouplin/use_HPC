@@ -33,8 +33,8 @@ In order to submit your job, you will need to submit a [PBS file](https://en.wik
 
 You will need to write some specifications:
 ```
-PBS -l walltime=00:30:00
-PBS -lselect=1:ncpus=1:mem=8gb:ngpus=1
+#PBS -lwalltime=00:30:00
+#PBS -lselect=1:ncpus=1:mem=8gb:ngpus=1
 module load anaconda3/4.3.1
 source activate <name_environment>
 python $HOME/<path_to_code>/<code>.py
