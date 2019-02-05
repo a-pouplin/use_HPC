@@ -7,7 +7,7 @@ Each student has been assigned to the [HPC services](http://www.imperial.ac.uk/c
 ## Download python with anaconda
 The containers provided by HPC already have all the modules you need to do your project. If you need a specific software, first check if it is available using `module avail`, and discuss it with the HPC services directly. 
 
-* If you prefer to use python 3: `module load anaconda3/4.3.1`
+* If you prefer to use python 3: `module load anaconda3/personal`
 * `anaconda-setup`
 * Launch Python: `python`
 
@@ -52,7 +52,7 @@ You will end up with two output:
 * `<pbs_name>.sh.e<job_number>`: error file, containing an error, if your job failed
 
 
-## Transfer your data from your computer to HPC 
+## Transfer your data from HPC to your computer 
 Dowload your file with [scp](https://en.wikipedia.org/wiki/Secure_copy) (you can also use FileZilla): 
 * `scp -r <user_name>@login.cx1.hpc.ic.ac.uk/<path_to_your_experiments> <path_on_your_computer>`
 
