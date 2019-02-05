@@ -8,6 +8,7 @@ Each student has been assigned to the [HPC services](http://www.imperial.ac.uk/c
 The containers provided by HPC already have all the modules you need to do your project. If you need a specific software, first check if it is available using `module avail`, and discuss it with the HPC services directly. 
 
 * If you prefer to use python 3: `module load anaconda3/4.3.1`
+* `anaconda-setup`
 * Launch Python: `python`
 
 ## Create your virtual environment
