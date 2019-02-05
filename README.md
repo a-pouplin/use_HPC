@@ -31,7 +31,7 @@ For example, if you don't have (yet) any code:
 ## Submit your code to the system
 In order to submit your job, you will need to submit a [PBS file](https://en.wikipedia.org/wiki/Portable_Batch_System) using a [bashscript](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) to HPC. Your job will be in a queue (which can last either a few minutes or a few hours). You can create your bashscript using vim: `vim <pbs_name>.sh`
 
-You will need to write some specifications:
+You will need to write the following specifications in your `<pbs_name>.sh` file:
 ```
 #PBS -lwalltime=00:30:00
 #PBS -lselect=1:ncpus=1:mem=8gb:ngpus=1
@@ -40,7 +40,7 @@ source activate <name_environment>
 python $HOME/<path_to_code>/<code>.py
 ```
 * `qsub <pbs_name>`: submit your job in the queue
-*
+
 
 ## Check the queue and your job status
 * `qstat -s`: check your job status
