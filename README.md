@@ -18,7 +18,7 @@ A virtual environnment is like a small container where you can install all the p
 * `source deactivate`: to deactivate your environment.
 
 Install your packages (ex: pytorch): 
-* `conda activate <name_environment>`
+* `source activate <name_environment>`
 * `conda install pytorch torchvision -c pytorch`
 * `conda install matplotlib` ...
 
