@@ -1,4 +1,4 @@
-## Access to the High Performance Computing 
+## Access to the High Performance Computing @ Imperial College London
 Each student has been assigned to the [HPC services](http://www.imperial.ac.uk/computational-methods/cm-hub/hpc-guide/).  Make sure you are connected to the Imperial network if you are working from home, using a [VPN](https://www.imperial.ac.uk/admin-services/ict/self-service/connect-communicate/remote-access/method/set-up-vpn/).
 
 * connect to your container: `ssh <user_name>@login.cx1.hpc.ic.ac.uk`
